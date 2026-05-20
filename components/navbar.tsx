@@ -23,7 +23,7 @@ export default function Navbar() {
             <div className="container mx-auto flex h-16 items-center px-4">
                 <Link href="/" className="flex items-center gap-2 text-xl px-4 font-semibold text-primary">
                     <Briefcase />
-                    Job Tracker
+                    CareerForge
                 </Link>
                 <div className="flex items-center gap-4 ml-auto">
                     {session?.user ? (
