@@ -8,8 +8,8 @@ import TabsWithImage from "@/components/ui/tabs-with-image";
 export default function Home() {
   
   return (
-  <div className="flex min-h-screen bg-white">
-    <main className="flex-1">
+  <div className="min-h-screen bg-white">
+    <main className="w-full">
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-32">
         <div className="mx-auto max-w-4xl text-center">
