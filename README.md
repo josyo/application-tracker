@@ -1,50 +1,79 @@
-📌 Kanban Job Tracker
+# Application Tracker
 
-A modern, responsive Kanban-style job tracking application built with Next.js. This project helps users organize job applications by moving them across different stages using a smooth drag-and-drop interface.
+A Kanban-style job application tracker that helps you stay on top of your job search. Add applications, drag them through stages, and keep everything organised in one place.
 
-🚀 Features
-📂 Kanban Board Layout – Organize jobs into different stages (e.g. Applied, Interview, Offer, etc.)
-🔄 Drag & Drop Support – Easily move job cards between columns
-📱 Fully Responsive Design – Optimized for both mobile and desktop
-Horizontal scroll on smaller screens
-Expanded layout on larger screens
-🎨 Clean UI – Minimal, modern interface with reusable components
-⚡ Fast Performance – Built with Next.js for speed and scalability
-🛠️ Tech Stack
-Next.js – React framework for production
-TypeScript – Type safety and better developer experience
-Tailwind CSS – Utility-first styling
-shadcn/ui – Prebuilt accessible UI components
-MongoDB – Database for storing job applications (if applicable)
-DnD Kit / React DnD – Drag and drop functionality
-📸 Preview
+**[Live Demo →](https://application-tracker-eight-chi.vercel.app)**
 
-(Add screenshots or a demo GIF here)
+---
 
-📦 Installation
-git clone https://github.com/your-username/kanban-job-tracker.git
-cd kanban-job-tracker
+## Features
+
+- **Kanban board** — visualise your pipeline across stages: Applied, Interview, Offer, and more
+- **Drag & drop** — move cards between columns with smooth, intuitive interactions
+- **Persistent storage** — applications saved to MongoDB so nothing gets lost
+- **Fully responsive** — horizontal scroll on mobile, expanded layout on desktop
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Components | shadcn/ui |
+| Database | MongoDB |
+| Drag & Drop | DnD Kit |
+| Deployment | Vercel |
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- A MongoDB connection string (local or [Atlas](https://www.mongodb.com/atlas))
+
+### Installation
+
+```bash
+git clone https://github.com/josyo/application-tracker.git
+cd application-tracker
 npm install
-▶️ Running the Project
+```
+
+### Environment Variables
+
+Create a `.env.local` file in the root:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+```
+
+### Run Locally
+
+```bash
 npm run dev
+```
 
-Then open:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-http://localhost:3000
-🧠 What I Learned
-Building responsive drag-and-drop interfaces
-Managing state across Kanban columns
-Structuring scalable Next.js applications
-Improving UI/UX for real-world productivity tools
-📱 Responsive Behaviour
+## Project Structure
 
-On mobile devices, the board switches to a horizontal scroll layout instead of stacking columns vertically. This keeps the drag-and-drop experience smooth without losing structure.
+```
+app/          # Next.js App Router pages and API routes
+components/   # Reusable UI components
+lib/          # Utility functions and database helpers
+scripts/      # Seed scripts and tooling
+public/       # Static assets
+```
 
-✨ Future Improvements
-Filters and search for job applications
-Authentication and user accounts
-Analytics dashboard (application success rate, etc.)
-Backend optimization and caching
-📄 License
+## Roadmap
 
-This project is open-source and available under the MIT License.
+- [ ] Search and filter applications
+- [ ] User authentication
+- [ ] Analytics dashboard (response rates, stage conversion)
+- [ ] Notes and attachments per application
+- [ ] Email reminders for follow-ups
+
+## License
+
+MIT
